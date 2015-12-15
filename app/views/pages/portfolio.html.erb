@@ -1,0 +1,30 @@
+<div class="categories col-xs-8">
+  <div class="img1">
+    <!--photo in application.css as a background-->
+  </div>
+    <ul>
+   <li class="cat">
+     <%= link_to_unless_current("Love Story", { :controller => "pages", :action => "love_story" }) do
+       "Love story"
+     end
+     %>
+     </l1>
+    <li class="cat">
+      <%= link_to_unless_current("Портрет", { :controller => "pages", :action => "portrait" }) do
+        "Портрет"
+      end
+      %>
+      </l1>
+    <l1 class="cat">
+      <%= link_to_unless_current("Свадьба", { :controller => "pages", :action => "wedding" }) do
+        "Свадьба"
+      end
+      %>
+    </l1>
+  </ul>
+  <ul class="dog">
+    <%= image_tag "p1.jpg" %>
+    <%= image_tag "p2.jpg" %>
+    <%= image_tag "p3.jpg" %>
+  </ul>
+</div>
