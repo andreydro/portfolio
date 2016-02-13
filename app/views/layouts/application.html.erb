@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Portfolio</title>
-  <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <head>
+    <title>Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  <%= stylesheet_link_tag 'application.css' %>
-
-</head>
-<body>
-
-<div class="header">
-  <div class="container">
-    <div class="row">
-      <div class="menu col-xs-8">
-        <ul>
-          <li class="forhover">
-            <%= link_to_unless_current("Главная", { :controller => "pages", :action => "welcome" }) do
+    <%= stylesheet_link_tag 'application.css' %>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="menu col-xs-8">
+            <ul>
+              <li class="forhover">
+              <%= link_to_unless_current("Главная", { :controller => "pages", :action => "welcome" }) do
               "Главная"
-            end
-            %>
-          </li>
-          <li class="forhover">
-            <% if controller_name== "pages" && action_name=="portfolio"%>
-                <span class="linkback">Портфолио</span>
-            <% else %>
-              <%= link_to "Портфолио", portfolio_path %>
-            <%end%>
-          </li>
-          <li class="forhover">
-            <% if controller_name=="pages" && action_name=="about"%>
-              <span class="linkback">Об авторе</span>
-            <%else%>
-              <%= link_to "Об авторе" , about_path%>
-            <%end%>
-          </li>
-
-          <li class="forhover">
-            <% if controller_name =="pages" && action_name== "contact" %>
-                <span class="linkback">Контакты</span>
-            <%else%>
-              <%= link_to "Контакты", contact_path%>
-            <%end%>
-          </li>
-        </ul>
-      </div>
-      <div class="name col-xs-4">
-        <h1>Надежда</h1>
+              end
+              %>
+              </li>
+              <li class="forhover">
+                <% if controller_name== "pages" && action_name=="portfolio"%>
+                  <span class="linkback">Портфолио</span>
+                <% else %>
+                <%= link_to "Портфолио", portfolio_path %>
+                <%end%>
+              </li>
+              <li class="forhover">
+                <% if controller_name=="pages" && action_name=="about"%>
+                  <span class="linkback">Об авторе</span>
+                <%else%>
+                  <%= link_to "Об авторе" , about_path%>
+                <%end%>
+              </li>
+              <li class="forhover">
+                <% if controller_name =="pages" && action_name== "contact" %>
+                  <span class="linkback">Контакты</span>
+                <%else%>
+                  <%= link_to "Контакты", contact_path%>
+                <%end%>
+               </li>
+            </ul>
+          </div>
+          <div class="name col-xs-4">
+            <h1>Надежда</h1>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<%= yield %>
+    <%= yield %>
 
-<div class="footer">
-  <div class="container">
-    <ul class="social_media">
-      <li><a href="http://vk.com/per_fect_little"><%= image_tag "vk.jpg", class:"vk"%></a></li>
-      <li><a href="mailto:nadejda.drozdova@mail.ru?cc=nadejda.drozdova@mail.ru"><%= image_tag "email.jpeg", class:"email"%></a></li>
-      <li><a href="https://www.instagram.com/nadejda.drozdova/"><%= image_tag "instagram.jpeg", class:"instagram"%></a></li>
-    </ul>
-    <p><a href="mailto:andreydro14@gmail.com">&copy; 2015 Andrey Dro</a></p>
-  </div>
-</div>
-</body>
+    <div class="footer">
+      <div class="container">
+        <ul class="social_media">
+          <li><a href="http://vk.com/per_fect_little"><%= image_tag "vk.jpg", class:"vk"%></a></li>
+          <li><a href="mailto:nadejda.drozdova@mail.ru?cc=nadejda.drozdova@mail.ru"><%= image_tag "email.jpeg", class:"email"%></a></li>
+          <li><a href="https://www.instagram.com/nadejda.drozdova/"><%= image_tag "instagram.jpeg", class:"instagram"%></a></li>
+        </ul>
+        <p><a href="mailto:andreydro14@gmail.com">&copy; 2015 Andrey Dro</a></p>
+      </div>
+    </div>
+  </body>
 </html>

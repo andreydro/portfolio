@@ -39,6 +39,7 @@ div > a {
     margin-left: 70px;
     margin-right: 70px;
 }
+
 .name.col-xs-4{
     float: right;
     margin-right: 80px;
@@ -46,6 +47,7 @@ div > a {
     margin-top: 20px;
     margin-right: 220px;
 }
+
 .jumbotron {
     background-image: url(light.jpg);
     background-size:100% 100% ;
@@ -58,11 +60,13 @@ div > a {
     padding: 10px 0px 0px 10px;
     border: 0px;
 }
+
 .highlight {
     font-size: 45px;
     background-color: ivory;
     color: black;
 }
+
 .btn.right {
     background-color: black;
     margin: 20px 220px 20px 0px;
@@ -72,21 +76,26 @@ div > a {
     font-size: 19px;
     color: white;
 }
+
 .btn.right:hover {
     background-color: lightpink;
 }
+
 .footer {
     float: right;
     margin-right: 80px;
 }
+
 h2{
     padding:50px 220px 20px 100px;
     font-family: Arial, sans-serif	;
 }
+
 .cat {
     margin: 0px 85px 10px 160px;
 font-size: 25px;
 }
+
 .img1 {
     background-image: url(riba.jpg);
     background-size:100% 100%;
@@ -96,20 +105,25 @@ font-size: 25px;
     height: 500px;
     width: 101%;
 }
+
 .dog {
     margin: 10px 0px 10px 10px;
 }
+
 .dog img{
     width: 30%;
     height: 30%;
     margin-left: 10px;
 }
+
 .categories.col-xs-8 {
     width: 100%;
 }
+
 .home1 {
     margin: 0px 200px 0px 190px;
 }
+
 #p {
     margin: 30px 0px 0px 0px;
 }
@@ -118,6 +132,7 @@ font-size: 25px;
     background-color: #BBBBBB;
 
 }
+
 .vk {
     width: 70px;
     height: 70px;
@@ -127,22 +142,27 @@ font-size: 25px;
     width: 60px;
     height: 60px;
 }
+
 .instagram {
     width: 60px;
     height: 60px;
 }
+
 .vk1 {
     width: 160px;
     height: 160px;
 }
+
 .email1 {
     width: 150px;
     height: 150px;
 }
+
 .instagram1 {
     width: 150px;
     height: 150px;
 }
+
 .portrait img {
     padding-top: 70px;
     margin-left: 25%;
@@ -150,6 +170,7 @@ font-size: 25px;
     width: 50%;
     height: 50%;
 }
+
 .forhover:hover {
     background-color: lightcyan;
 }

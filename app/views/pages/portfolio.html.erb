@@ -2,19 +2,19 @@
   <div class="img1">
     <!--photo in application.css as a background-->
   </div>
-    <ul>
-   <li class="cat">
-     <%= link_to_unless_current("Love Story", { :controller => "pages", :action => "love_story" }) do
+  <ul>
+    <li class="cat">
+      <%= link_to_unless_current("Love Story", { :controller => "pages", :action => "love_story" }) do
        "Love story"
-     end
-     %>
-     </l1>
+       end
+       %>
+    </l1>
     <li class="cat">
       <%= link_to_unless_current("Портрет", { :controller => "pages", :action => "portrait" }) do
         "Портрет"
       end
       %>
-      </l1>
+    </l1>
     <l1 class="cat">
       <%= link_to_unless_current("Свадьба", { :controller => "pages", :action => "wedding" }) do
         "Свадьба"
