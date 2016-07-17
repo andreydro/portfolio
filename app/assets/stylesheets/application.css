@@ -95,8 +95,15 @@ h2{
 }
 
 .cat {
-    margin: 0px 85px 10px 160px;
-font-size: 25px;
+    display: block;
+    margin: 0px 85px 20px 0px;
+    font-size: 25px;
+}
+
+.cat img{
+    width: 45%;
+    height: 45%;
+    margin-left: 10px;
 }
 
 .img1 {
@@ -113,10 +120,8 @@ font-size: 25px;
     margin: 10px 0px 10px 10px;
 }
 
-.dog img{
-    width: 30%;
-    height: 30%;
-    margin-left: 10px;
+.block {
+    margin-left: 35%;
 }
 
 .categories.col-xs-8 {
